@@ -1,0 +1,1245 @@
+/*==========================================================
+ADMIN SETTINGS PAGE
+==========================================================*/
+
+.admin-settings-page{
+
+    padding:30px;
+
+    background:#f8f9fc;
+
+    min-height:100vh;
+
+}
+
+
+/*==========================================================
+HEADER
+==========================================================*/
+
+.settings-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.settings-header h2{
+
+    font-size:32px;
+
+    color:#5C4033;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.settings-header p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+
+/*==========================================================
+GRID LAYOUT
+==========================================================*/
+
+.settings-top-grid{
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+.settings-bottom-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+
+/*==========================================================
+COMMON CARD
+==========================================================*/
+
+.settings-card{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:all .35s ease;
+
+}
+
+.settings-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#D9C2AF;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+
+/*==========================================================
+CARD TITLE
+==========================================================*/
+
+.card-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+.card-title svg{
+
+    color:#8B5E3C;
+
+    font-size:22px;
+
+}
+
+.card-title h3{
+
+    color:#5C4033;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin:0;
+
+}
+
+
+/*==========================================================
+PROFILE CARD
+==========================================================*/
+
+.profile-card{
+
+    text-align:center;
+
+}
+
+.profile-avatar{
+
+    width:110px;
+
+    height:110px;
+
+    margin:15px auto;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#8B5E3C,#B08968);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:52px;
+
+    color:#fff;
+
+    box-shadow:0 10px 25px rgba(139,94,60,.25);
+
+}
+
+.profile-name{
+
+    margin-top:18px;
+
+    margin-bottom:6px;
+
+    color:#5C4033;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.profile-role{
+
+    display:inline-block;
+
+    margin-bottom:22px;
+
+    padding:7px 18px;
+
+    border-radius:30px;
+
+    background:#F7EFE8;
+
+    color:#8B5E3C;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.profile-info{
+
+    margin-top:10px;
+
+}
+
+.profile-info p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:14px 0;
+
+    color:#666;
+
+    font-size:15px;
+
+    word-break:break-word;
+
+}
+
+.edit-profile-btn{
+
+    width:100%;
+
+    margin-top:22px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8B5E3C;
+
+    color:#fff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.edit-profile-btn:hover{
+
+    background:#70492D;
+
+}
+/*==========================================================
+PASSWORD CARD
+==========================================================*/
+
+.password-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+}
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#5C4033;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    width:100%;
+
+    padding:14px 50px 14px 16px;
+
+    border:1px solid #DDDDDD;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:all .3s ease;
+
+    box-sizing:border-box;
+
+}
+
+.password-box input:focus{
+
+    border-color:#8B5E3C;
+
+    box-shadow:0 0 0 4px rgba(139,94,60,.12);
+
+}
+
+.password-box input::placeholder{
+
+    color:#B0B0B0;
+
+}
+
+.eye-btn{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:none;
+
+    border:none;
+
+    color:#8B5E3C;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.eye-btn:hover{
+
+    color:#6E4528;
+
+}
+
+
+/*==========================================================
+PASSWORD STRENGTH
+==========================================================*/
+
+.password-strength{
+
+    margin-top:5px;
+
+    margin-bottom:25px;
+
+}
+
+.strength-text{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+.strength-text span{
+
+    color:#F39C12;
+
+    font-weight:600;
+
+}
+
+.strength-bar{
+
+    width:100%;
+
+    height:8px;
+
+    background:#ECECEC;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.strength-fill{
+
+    width:65%;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:linear-gradient(
+        90deg,
+        #F5B041,
+        #E67E22
+    );
+
+}
+
+.update-password-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#8B5E3C;
+
+    color:#FFFFFF;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.update-password-btn:hover{
+
+    background:#6F472C;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(139,94,60,.20);
+
+}
+/*==========================================================
+PREFERENCES CARD
+==========================================================*/
+
+.preferences-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.preference-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #EFEFEF;
+
+}
+
+.preference-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.preference-item h4{
+
+    color:#5C4033;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:5px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.preference-item p{
+
+    color:#777;
+
+    font-size:13px;
+
+    margin:0;
+
+    line-height:1.5;
+
+}
+
+
+/*==========================================================
+MODERN TOGGLE SWITCH
+==========================================================*/
+
+.switch{
+
+    position:relative;
+
+    display:inline-block;
+
+    width:56px;
+
+    height:30px;
+
+}
+
+.switch input{
+
+    opacity:0;
+
+    width:0;
+
+    height:0;
+
+}
+
+.slider{
+
+    position:absolute;
+
+    cursor:pointer;
+
+    inset:0;
+
+    background:#D5D5D5;
+
+    transition:.35s;
+
+    border-radius:50px;
+
+}
+
+.slider:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:22px;
+
+    height:22px;
+
+    left:4px;
+
+    bottom:4px;
+
+    background:#FFFFFF;
+
+    transition:.35s;
+
+    border-radius:50%;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+}
+
+.switch input:checked + .slider{
+
+    background:#8B5E3C;
+
+}
+
+.switch input:checked + .slider:before{
+
+    transform:translateX(26px);
+
+}
+
+.slider:hover{
+
+    opacity:.9;
+
+}
+
+
+/*==========================================================
+LANGUAGE
+==========================================================*/
+
+.language-section{
+
+    margin-top:25px;
+
+}
+
+.language-section label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-bottom:10px;
+
+    color:#5C4033;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.language-section select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #DDDDDD;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    color:#555;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.language-section select:focus{
+
+    border-color:#8B5E3C;
+
+    box-shadow:0 0 0 4px rgba(139,94,60,.10);
+
+}
+
+.language-section select:hover{
+
+    border-color:#B08968;
+
+}
+/*==========================================================
+SYSTEM SETTINGS
+==========================================================*/
+
+.system-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.system-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #F1F1F1;
+
+}
+
+.system-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.system-icon{
+
+    width:52px;
+
+    height:52px;
+
+    min-width:52px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#F8F1EC;
+
+    color:#8B5E3C;
+
+    border-radius:14px;
+
+    font-size:22px;
+
+}
+
+.system-item div{
+
+    flex:1;
+
+}
+
+.system-item h4{
+
+    margin-bottom:5px;
+
+    color:#5C4033;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.system-item p{
+
+    color:#777;
+
+    font-size:13px;
+
+    margin:0;
+
+}
+
+
+/*==========================================================
+STATUS BADGES
+==========================================================*/
+
+.status-badge{
+
+    padding:8px 15px;
+
+    border-radius:30px;
+
+    background:#F5ECE6;
+
+    color:#8B5E3C;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.status-badge.success{
+
+    background:#E8F8EF;
+
+    color:#2ECC71;
+
+}
+
+
+/*==========================================================
+SECURITY STATUS
+==========================================================*/
+
+.security-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.security-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.security-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #F2F2F2;
+
+}
+
+.security-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.ok-icon{
+
+    color:#2ECC71;
+
+    font-size:18px;
+
+}
+
+.info-icon{
+
+    color:#3498DB;
+
+    font-size:18px;
+
+}
+
+.security-item span{
+
+    color:#555;
+
+    font-size:15px;
+
+}
+
+
+/*==========================================================
+ACTION BUTTONS
+==========================================================*/
+
+.settings-actions{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.save-btn,
+.reset-btn{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+.save-btn{
+
+    background:#8B5E3C;
+
+    color:#FFFFFF;
+
+}
+
+.save-btn:hover{
+
+    background:#6E4528;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(139,94,60,.25);
+
+}
+
+.reset-btn{
+
+    background:#ECECEC;
+
+    color:#555;
+
+}
+
+.reset-btn:hover{
+
+    background:#DDDDDD;
+
+    transform:translateY(-2px);
+
+}
+/*==========================================================
+ANIMATIONS
+==========================================================*/
+
+.settings-card{
+
+    animation:fadeInUp .45s ease;
+
+}
+
+@keyframes fadeInUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==========================================================
+CUSTOM SCROLLBAR
+==========================================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F4F4F4;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#B08A68;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8B5E3C;
+
+}
+
+
+/*==========================================================
+INPUTS & BUTTONS
+==========================================================*/
+
+input,
+select,
+button{
+
+    font-family:inherit;
+
+}
+
+button{
+
+    outline:none;
+
+}
+
+button:active{
+
+    transform:scale(.98);
+
+}
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+}
+
+
+/*==========================================================
+RESPONSIVE
+==========================================================*/
+
+@media (max-width:1200px){
+
+    .settings-top-grid{
+
+        grid-template-columns:300px 1fr;
+
+    }
+
+}
+
+@media (max-width:992px){
+
+    .settings-top-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .settings-bottom-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .profile-card{
+
+        text-align:center;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .admin-settings-page{
+
+        padding:20px;
+
+    }
+
+    .settings-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:12px;
+
+    }
+
+    .settings-header h2{
+
+        font-size:28px;
+
+    }
+
+    .settings-card{
+
+        padding:22px;
+
+    }
+
+    .profile-avatar{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:42px;
+
+    }
+
+    .preference-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:14px;
+
+    }
+
+    .system-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .settings-actions{
+
+        flex-direction:column;
+
+    }
+
+    .save-btn,
+    .reset-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .settings-header h2{
+
+        font-size:24px;
+
+    }
+
+    .card-title h3{
+
+        font-size:18px;
+
+    }
+
+    .profile-name{
+
+        font-size:20px;
+
+    }
+
+    .profile-info p{
+
+        font-size:13px;
+
+    }
+
+    .security-item span{
+
+        font-size:13px;
+
+    }
+
+}
+
+
+/*==========================================================
+HOVER EFFECTS
+==========================================================*/
+
+.settings-card{
+
+    transition:all .35s ease;
+
+}
+
+.settings-card:hover{
+
+    border-color:#D9C2AF;
+
+}
+
+.edit-profile-btn,
+.update-password-btn,
+.save-btn{
+
+    transition:.3s;
+
+}
+
+.edit-profile-btn:hover,
+.update-password-btn:hover,
+.save-btn:hover{
+
+    box-shadow:0 10px 22px rgba(139,94,60,.22);
+
+}
+
+.reset-btn{
+
+    transition:.3s;
+
+}
+
+.reset-btn:hover{
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}

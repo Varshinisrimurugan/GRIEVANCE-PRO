@@ -1,0 +1,1569 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#F3EADF;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   MAIN LAYOUT
+========================================== */
+
+.worker-dashboard{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+    background:#F3EADF;
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.worker-sidebar{
+
+    width:250px;
+    background:#7A5A46;
+    color:#fff;
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    height:100vh;
+
+    padding:24px 18px;
+
+    overflow-y:auto;
+
+    box-shadow:4px 0 15px rgba(0,0,0,.08);
+
+}
+
+.logo-section{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.logo-section h2{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+}
+
+.logo-section p{
+
+    margin-top:6px;
+
+    font-size:13px;
+
+    color:#E8D9CA;
+
+}
+
+.worker-sidebar ul{
+
+    list-style:none;
+
+}
+
+.worker-sidebar ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:13px 16px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.worker-sidebar ul li:hover{
+
+    background:#A67C63;
+
+}
+
+.worker-sidebar ul li.active{
+
+    background:#E5D2C0;
+
+    color:#5B4032;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.worker-main{
+
+    margin-left:250px;
+
+    width:calc(100% - 250px);
+
+    padding:28px;
+
+}
+
+/* ==========================================
+   COMMON
+========================================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+h1{
+
+    font-size:28px;
+
+    color:#553B2D;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:21px;
+
+    color:#553B2D;
+
+}
+
+h3{
+
+    font-size:18px;
+
+    color:#553B2D;
+
+}
+
+h4{
+
+    font-size:15px;
+
+    color:#553B2D;
+
+}
+
+h5{
+
+    font-size:13px;
+
+    color:#7C675B;
+
+    font-weight:500;
+
+}
+
+p{
+
+    font-size:14px;
+
+    color:#78695D;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   CARD STYLE
+========================================== */
+
+.dashboard-card,
+.bottom-card,
+.progress-card,
+.activity-card,
+.quick-actions,
+.complaints-section,
+.welcome-card{
+
+    background:#FFF9F4;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    border:1px solid #E8D7C7;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+
+}
+/* ==========================================
+   TOP HEADER
+========================================== */
+
+.worker-topbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:28px;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.worker-topbar h1{
+
+    font-size:28px;
+    font-weight:700;
+    color:#5C4033;
+    margin-bottom:5px;
+
+}
+
+.worker-topbar p{
+
+    font-size:14px;
+    color:#866A58;
+
+}
+
+.top-right{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================
+   SEARCH BOX
+========================================== */
+
+.search-box{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    width:290px;
+    height:48px;
+
+    background:#FFF9F4;
+
+    border:1px solid #E6D6C8;
+
+    border-radius:12px;
+
+    padding:0 16px;
+
+}
+
+.search-box svg{
+
+    color:#8A6B58;
+    font-size:15px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+    color:#5C4033;
+
+}
+
+.search-box input::placeholder{
+
+    color:#A18C7E;
+
+}
+
+/* ==========================================
+   DATE
+========================================== */
+
+.date-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#FFF9F4;
+
+    border:1px solid #E6D6C8;
+
+    border-radius:12px;
+
+    padding:12px 18px;
+
+    color:#6E5648;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+/* ==========================================
+   NOTIFICATION
+========================================== */
+
+.notification{
+
+    width:48px;
+    height:48px;
+
+    border-radius:12px;
+
+    background:#FFF9F4;
+
+    border:1px solid #E6D6C8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.notification svg{
+
+    font-size:18px;
+
+    color:#6A4D3D;
+
+}
+
+.notification span{
+
+    position:absolute;
+
+    top:-5px;
+
+    right:-5px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:#C86B4A;
+
+    color:#fff;
+
+    font-size:11px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#FFF9F4;
+
+    border:1px solid #E6D6C8;
+
+    border-radius:12px;
+
+    padding:10px 16px;
+
+}
+
+.profile svg{
+
+    font-size:34px;
+
+    color:#7B5B47;
+
+}
+
+.profile h4{
+
+    font-size:15px;
+
+    margin-bottom:2px;
+
+    color:#5C4033;
+
+}
+
+.profile p{
+
+    font-size:12px;
+
+    color:#8E7767;
+
+}
+
+/* ==========================================
+   WELCOME CARD
+========================================== */
+
+.welcome-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:28px;
+
+    background:linear-gradient(135deg,#F6ECE1,#EFE0D0);
+
+}
+
+.welcome-card h2{
+
+    font-size:23px;
+
+    margin-bottom:10px;
+
+}
+
+.welcome-card p{
+
+    font-size:14px;
+
+    max-width:600px;
+
+}
+
+.welcome-card button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+
+    background:#7B5B47;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.welcome-card button:hover{
+
+    background:#654836;
+
+}
+
+/* ==========================================
+   DASHBOARD CARDS
+========================================== */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.dashboard-card{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    min-height:110px;
+
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card-menu{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    color:#A08673;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+.card-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+}
+
+.card-content h2{
+
+    font-size:30px;
+
+    margin:5px 0;
+
+    color:#5C4033;
+
+}
+
+.card-content p{
+
+    font-size:13px;
+
+    color:#9A8476;
+
+}
+
+/* ==========================================
+   ICON COLORS
+========================================== */
+
+.brown{
+
+    background:#8C6A54;
+
+}
+
+.orange{
+
+    background:#D79A63;
+
+}
+
+.blue{
+
+    background:#7FA6B8;
+
+}
+
+.green{
+
+    background:#79A879;
+
+}
+
+.red{
+
+    background:#D9785F;
+
+}
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.worker-content{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:24px;
+
+    align-items:flex-start;
+
+}
+
+/* ==========================================
+   COMPLAINT SECTION
+========================================== */
+
+.complaints-section{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.section-header h2,
+.section-header h3{
+
+    font-size:20px;
+
+    color:#5C4033;
+
+    font-weight:600;
+
+}
+
+.view-btn{
+
+    background:#8B6A54;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.view-btn:hover{
+
+    background:#6E5141;
+
+}
+
+/* ==========================================
+   COMPLAINT LIST
+========================================== */
+
+.complaint-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================================
+   SINGLE CARD
+========================================== */
+
+.complaint-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    border-radius:16px;
+
+    background:#FDF8F3;
+
+    border:1px solid #E8D7C7;
+
+    transition:.3s;
+
+}
+
+.complaint-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.complaint-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex:2;
+
+}
+
+.complaint-icon{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:16px;
+
+    background:#EEDFD2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+}
+
+.complaint-left h4{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#5C4033;
+
+    margin-bottom:6px;
+
+}
+
+.cmp-id{
+
+    display:inline-block;
+
+    margin-bottom:5px;
+
+    font-size:12px;
+
+    color:#9B7B65;
+
+    font-weight:600;
+
+}
+
+.complaint-left p{
+
+    font-size:13px;
+
+    color:#8C7466;
+
+}
+
+/* ==========================================
+   CENTER
+========================================== */
+
+.complaint-middle{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+/* ==========================================
+   PRIORITY
+========================================== */
+
+.priority{
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.priority.high{
+
+    background:#F7D7D0;
+
+    color:#B7412F;
+
+}
+
+.priority.medium{
+
+    background:#FCECC8;
+
+    color:#B57D00;
+
+}
+
+.priority.low{
+
+    background:#DFF2DD;
+
+    color:#3D8B45;
+
+}
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status{
+
+    padding:6px 16px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.status.pending{
+
+    background:#FFF1C7;
+
+    color:#9D7B00;
+
+}
+
+.status.inprogress{
+
+    background:#DDEEFF;
+
+    color:#2B72C7;
+
+}
+
+.status.resolved{
+
+    background:#DCF5DF;
+
+    color:#2F8C44;
+
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.complaint-right{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:12px;
+
+}
+
+.complaint-right small{
+
+    color:#8A7566;
+
+    font-size:12px;
+
+}
+
+.complaint-right button{
+
+    background:#8B6A54;
+
+    color:#fff;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.complaint-right button:hover{
+
+    background:#6F5241;
+
+}
+
+/* ==========================================
+   RIGHT PANEL
+========================================== */
+
+.worker-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+/* ==========================================
+   PROGRESS CARD
+========================================== */
+
+.progress-card{
+
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.progress-card h3{
+
+    font-size:18px;
+    font-weight:600;
+    color:#5C4033;
+
+}
+
+.progress-circle{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.circle{
+
+    width:110px;
+    height:110px;
+    border-radius:50%;
+
+    background:
+    conic-gradient(#8B6A54 0deg 288deg,
+    #E9D8CB 288deg 360deg);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.circle h2{
+
+    width:82px;
+    height:82px;
+
+    background:#FFF9F4;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+    color:#5C4033;
+    font-weight:700;
+
+}
+
+.progress-info{
+
+    flex:1;
+
+}
+
+.progress-info h4{
+
+    font-size:16px;
+    margin-bottom:8px;
+
+}
+
+.progress-info p{
+
+    font-size:13px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+    height:10px;
+
+    background:#EADDD2;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:80%;
+    height:100%;
+
+    background:#8B6A54;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
+
+.quick-actions{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+.quick-actions h3{
+
+    font-size:18px;
+    color:#5C4033;
+
+}
+
+.action-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+
+}
+
+.action-grid button{
+
+    background:#F9F2EC;
+
+    border:1px solid #E5D5C7;
+
+    border-radius:14px;
+
+    padding:18px 12px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.action-grid button:hover{
+
+    background:#8B6A54;
+    color:#fff;
+    transform:translateY(-4px);
+
+}
+
+.action-grid button svg{
+
+    font-size:24px;
+    color:#8B6A54;
+
+    transition:.3s;
+
+}
+
+.action-grid button:hover svg{
+
+    color:#fff;
+
+}
+
+.action-grid button span{
+
+    font-size:13px;
+    font-weight:500;
+
+}
+
+/* ==========================================
+   RECENT ACTIVITY
+========================================== */
+
+.activity-card{
+
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+
+}
+
+.activity-card ul{
+
+    list-style:none;
+
+}
+
+.activity-card li{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:6px;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #EFE3D8;
+
+    font-size:14px;
+
+    color:#5C4033;
+
+}
+
+.activity-card li:last-child{
+
+    border-bottom:none;
+
+}
+
+.activity-card li span{
+
+    font-size:12px;
+    color:#9B8576;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F3EADF;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#B08A72;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8B6A54;
+
+}
+/* ==========================================
+   BOTTOM CARDS
+========================================== */
+
+.bottom-cards{
+
+    margin-top:28px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.bottom-card{
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.bottom-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.bottom-card h3{
+
+    font-size:17px;
+
+    color:#6A4D3D;
+
+    margin-bottom:14px;
+
+}
+
+.bottom-card h1{
+
+    font-size:36px;
+
+    color:#8B6A54;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.bottom-card p{
+
+    font-size:13px;
+
+    color:#8D776A;
+
+}
+
+/* ==========================================
+   HOVER EFFECTS
+========================================== */
+
+.dashboard-card,
+.complaint-card,
+.bottom-card,
+.progress-card,
+.quick-actions,
+.activity-card{
+
+    transition:all .3s ease;
+
+}
+
+.dashboard-card:hover,
+.progress-card:hover,
+.quick-actions:hover,
+.activity-card:hover,
+.bottom-card:hover{
+
+    box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+/* Laptop */
+
+@media(max-width:1400px){
+
+.dashboard-cards{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+.bottom-cards{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:1100px){
+
+.worker-main{
+
+margin-left:0;
+
+width:100%;
+
+padding:20px;
+
+}
+
+.worker-sidebar{
+
+position:relative;
+
+width:220px;
+
+height:auto;
+
+}
+
+.worker-dashboard{
+
+flex-direction:column;
+
+}
+
+.worker-content{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.bottom-cards{
+
+grid-template-columns:1fr;
+
+}
+
+.top-right{
+
+width:100%;
+
+justify-content:flex-start;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.worker-topbar{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.search-box{
+
+width:100%;
+
+}
+
+.date-box{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+.profile{
+
+width:100%;
+
+}
+
+.dashboard-cards{
+
+grid-template-columns:1fr;
+
+}
+
+.complaint-card{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:16px;
+
+}
+
+.complaint-middle{
+
+align-items:flex-start;
+
+}
+
+.complaint-right{
+
+align-items:flex-start;
+
+}
+
+.action-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.progress-circle{
+
+flex-direction:column;
+
+}
+
+.welcome-card{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:18px;
+
+}
+
+.welcome-card button{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+
+/* ==========================================
+   SMOOTH ANIMATION
+========================================== */
+
+.dashboard-card,
+.complaint-card,
+.bottom-card,
+.progress-card,
+.quick-actions,
+.activity-card,
+.welcome-card{
+
+animation:fadeIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+0%{
+
+opacity:0;
+
+transform:translateY(15px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================================
+   END
+========================================== */

@@ -1,0 +1,314 @@
+/*====================================
+ADMIN DASHBOARD
+====================================*/
+
+.admin-dashboard{
+    display:flex;
+    min-height:100vh;
+    background:#F8F1E5;
+}
+
+/*====================================
+MAIN CONTENT
+====================================*/
+
+.admin-main{
+    flex:1;
+    margin-left:270px;
+    padding:22px;
+    overflow-y:auto;
+    transition:.3s;
+}
+
+.admin-main::-webkit-scrollbar{
+    width:8px;
+}
+
+.admin-main::-webkit-scrollbar-thumb{
+    background:#C89B6D;
+    border-radius:20px;
+}
+
+/*====================================
+CONTENT
+====================================*/
+
+.admin-content{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:22px;
+    margin-top:25px;
+    align-items:start;
+}
+
+/*====================================
+LEFT SECTION
+====================================*/
+
+.chart-section{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+/*====================================
+RIGHT SECTION
+====================================*/
+
+.table-section{
+    width:100%;
+}
+
+/*====================================
+COMMON CARD
+====================================*/
+
+.white-card{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:0 10px 25px rgba(155,111,51,.10);
+
+    border:1px solid #F1E2CF;
+
+}
+
+/*====================================
+SECTION TITLE
+====================================*/
+
+.section-title{
+
+    color:#7A4F28;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+/*====================================
+TEXT
+====================================*/
+
+.white-card h1{
+    font-size:28px;
+    font-weight:700;
+    color:#5B3A20;
+}
+
+.white-card h2{
+    font-size:22px;
+    font-weight:700;
+    color:#5B3A20;
+}
+
+.white-card h3{
+    font-size:17px;
+    font-weight:600;
+    color:#7A4F28;
+}
+
+.white-card p{
+    font-size:15px;
+    color:#8A6A4C;
+    line-height:1.6;
+}
+
+/*====================================
+WORKER STATUS CARDS
+====================================*/
+
+.worker-status-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:22px;
+
+    margin-bottom:25px;
+
+}
+
+.worker-card{
+
+    background:#FFFDF9;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    box-shadow:0 8px 20px rgba(155,111,51,.08);
+
+    border:1px solid #F3E4D2;
+
+    transition:.3s;
+
+}
+
+.worker-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 14px 28px rgba(155,111,51,.18);
+
+}
+/*====================================
+WORKER CARD TEXT
+====================================*/
+
+.worker-card h3{
+
+    margin:0;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#5A3214;
+
+    line-height:1.4;
+
+}
+
+.worker-card h1{
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-size:56px;
+
+    font-weight:700;
+
+    line-height:1;
+
+}
+
+/*====================================
+CARD COLORS
+====================================*/
+
+.available-card{
+
+    border-left:6px solid #52B788;
+
+}
+
+.available-card h1{
+
+    color:#52B788;
+
+}
+
+.busy-card{
+
+    border-left:6px solid #E67E22;
+
+}
+
+.busy-card h1{
+
+    color:#E67E22;
+
+}
+
+.leave-card{
+
+    border-left:6px solid #C89B3C;
+
+}
+
+.leave-card h1{
+
+    color:#C89B3C;
+
+}
+
+/*====================================
+RESPONSIVE
+====================================*/
+
+@media(max-width:1400px){
+
+.admin-content{
+grid-template-columns:290px 1fr;
+}
+
+}
+
+@media(max-width:1200px){
+
+.admin-content{
+grid-template-columns:1fr;
+}
+
+.chart-section{
+order:1;
+}
+
+.table-section{
+order:2;
+}
+
+}
+
+@media(max-width:992px){
+
+.admin-main{
+margin-left:90px;
+padding:18px;
+}
+
+.worker-status-cards{
+grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.admin-main{
+margin-left:0;
+padding:15px;
+}
+
+.admin-content{
+gap:18px;
+}
+
+.section-title{
+font-size:20px;
+}
+
+}
+
+@media(max-width:576px){
+
+.admin-content{
+display:flex;
+flex-direction:column;
+}
+
+.white-card{
+padding:18px;
+}
+
+.section-title{
+font-size:18px;
+}
+
+.worker-card h1{
+font-size:28px;
+}
+
+}

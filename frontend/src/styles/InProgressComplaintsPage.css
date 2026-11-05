@@ -1,0 +1,535 @@
+/*==================================================
+IN PROGRESS PAGE
+==================================================*/
+
+.inprogress-page{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin-top:25px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    border:1px solid #EFE2D5;
+
+    animation:fadeIn .4s ease;
+
+}
+
+/*==================================================
+HEADER
+==================================================*/
+
+.inprogress-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    gap:25px;
+
+}
+
+.inprogress-header h2{
+
+    margin:0;
+
+    color:#5B3213;
+
+    font-size:38px;
+
+    font-weight:700;
+
+}
+
+.inprogress-header p{
+
+    margin-top:8px;
+
+    color:#98704D;
+
+    font-size:17px;
+
+    font-weight:500;
+
+}
+
+/*==================================================
+SEARCH
+==================================================*/
+
+.search-box{
+
+    width:420px;
+
+    height:56px;
+
+    background:#FFF8F2;
+
+    border:1px solid #E8D6C4;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 18px;
+
+}
+
+.search-box svg{
+
+    color:#8B5A2B;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:15px;
+
+    color:#5A3214;
+
+}
+
+.search-box input::placeholder{
+
+    color:#B38A64;
+
+}
+
+/*==================================================
+TABLE
+==================================================*/
+
+.inprogress-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
+
+.inprogress-table thead{
+
+    background:linear-gradient(135deg,#8B5A2B,#B77942);
+
+}
+
+.inprogress-table th{
+
+    padding:18px;
+
+    color:#FFF;
+
+    font-size:15px;
+
+    text-align:center;
+
+}
+
+.inprogress-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #F3E5D7;
+
+    color:#5A3214;
+
+    background:#FFF;
+
+}
+
+.inprogress-table tbody tr:hover{
+
+    background:#FFF7EF;
+
+}
+/*==================================================
+PRIORITY BADGES
+==================================================*/
+
+.priority{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:90px;
+
+    height:38px;
+
+    padding:0 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.priority.high{
+
+    background:#FDE2E2;
+
+    color:#DC2626;
+
+}
+
+.priority.medium{
+
+    background:#FEF3C7;
+
+    color:#D97706;
+
+}
+
+.priority.low{
+
+    background:#DCFCE7;
+
+    color:#16A34A;
+
+}
+
+/*==================================================
+STATUS
+==================================================*/
+
+.status{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:110px;
+
+    height:38px;
+
+    padding:0 16px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.status.in_progress{
+
+    background:#FFE8CC;
+
+    color:#EA580C;
+
+}
+
+/*==================================================
+ACTION BUTTONS
+==================================================*/
+
+.table-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.table-actions button{
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.table-actions button svg{
+
+    font-size:18px;
+
+    color:#FFF;
+
+}
+
+/*==================================================
+VIEW BUTTON
+==================================================*/
+
+.view-btn{
+
+    background:#8B5A2B;
+
+}
+
+.view-btn:hover{
+
+    background:#6F431D;
+
+    transform:translateY(-2px);
+
+}
+
+/*==================================================
+RESOLVE BUTTON
+==================================================*/
+
+.resolve-btn{
+
+    background:#16A34A;
+
+}
+
+.resolve-btn:hover{
+
+    background:#15803D;
+
+    transform:translateY(-2px);
+
+}
+
+/*==================================================
+LOADING
+==================================================*/
+
+.loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:220px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#8B5A2B;
+
+}
+
+/*==================================================
+NO DATA
+==================================================*/
+
+.no-data{
+
+    padding:60px;
+
+    text-align:center;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#9A7A5A;
+
+}
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .inprogress-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .inprogress-table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .inprogress-page{
+
+        padding:20px;
+
+    }
+
+    .inprogress-header h2{
+
+        font-size:28px;
+
+    }
+
+    .inprogress-table th{
+
+        font-size:14px;
+
+        padding:14px;
+
+    }
+
+    .inprogress-table td{
+
+        font-size:13px;
+
+        padding:14px;
+
+    }
+
+    .priority,
+
+    .status{
+
+        min-width:80px;
+
+        height:34px;
+
+        font-size:12px;
+
+    }
+
+    .table-actions button{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .inprogress-page{
+
+        padding:16px;
+
+    }
+
+    .inprogress-header{
+
+        gap:15px;
+
+    }
+
+    .inprogress-header h2{
+
+        font-size:22px;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+        height:46px;
+
+    }
+
+}
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+.inprogress-page::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.inprogress-page::-webkit-scrollbar-thumb{
+
+    background:#C48A56;
+
+    border-radius:20px;
+
+}
+
+/*==================================================
+ANIMATION
+==================================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

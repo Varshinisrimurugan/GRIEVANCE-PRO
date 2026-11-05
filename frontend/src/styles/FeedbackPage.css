@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+
+    background:#F6F1EA;
+
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.student-dashboard{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#F6F1EA;
+
+}
+
+.main-content{
+
+    flex:1;
+
+    margin-left:260px;
+
+    padding:30px;
+
+}
+
+/* =========================
+   FEEDBACK CARD
+========================= */
+
+.feedback-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.feedback-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-bottom:35px;
+
+}
+
+.feedback-header h2{
+
+    font-size:34px;
+
+    color:#5D4037;
+
+    margin:10px 0;
+
+}
+
+.feedback-header h2 span{
+
+    color:#8B5E3C;
+
+}
+
+.feedback-header p{
+
+    color:#777;
+
+    line-height:1.7;
+
+    max-width:450px;
+
+}
+
+/* Badge */
+
+.feedback-badge{
+
+    display:inline-block;
+
+    background:#F4E6D7;
+
+    color:#8B5E3C;
+
+    padding:8px 18px;
+
+    border-radius:25px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+/* Image */
+.feedback-image{
+
+    width:150px;
+
+    height:150px;
+
+    background:#F5EBDD;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.feedback-image img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+}
+
+/* =========================
+   FORM
+========================= */
+
+.feedback-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    color:#5D4037;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+/* =========================
+   INPUT
+========================= */
+
+.form-group input{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:1px solid #DCC8B5;
+
+    border-radius:12px;
+
+    background:#FCF8F3;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-group input:focus{
+
+    outline:none;
+
+    border-color:#8B5E3C;
+
+    box-shadow:0 0 8px rgba(139,94,60,.18);
+
+}
+
+/* =========================
+   TEXTAREA
+========================= */
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    min-height:150px;
+
+    border:1px solid #DCC8B5;
+
+    border-radius:12px;
+
+    resize:none;
+
+    background:#FCF8F3;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#8B5E3C;
+
+    box-shadow:0 0 8px rgba(139,94,60,.18);
+
+}
+
+/* =========================
+   RATING
+========================= */
+
+.rating-stars{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:8px;
+
+}
+
+.star{
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#D5C3AF;
+
+    transition:.25s;
+
+}
+
+.star:hover{
+
+    transform:scale(1.15);
+
+}
+
+.star.active{
+
+    color:#F4B400;
+
+}
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn{
+
+    width:220px;
+
+    padding:15px 25px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:linear-gradient(135deg,#8B5E3C,#C89A6B);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(139,94,60,.25);
+
+}
+
+/* =========================
+   CARD ANIMATION
+========================= */
+
+.feedback-card{
+
+    animation:fadeIn .6s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.feedback-image img{
+
+    transition:.3s ease;
+
+}
+
+.feedback-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .main-content{
+
+        margin-left:0;
+
+        padding:20px;
+
+    }
+
+    .feedback-header{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .feedback-image img{
+
+        width:170px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .feedback-card{
+
+        padding:20px;
+
+    }
+
+    .feedback-header h2{
+
+        font-size:28px;
+
+    }
+
+    .submit-btn{
+
+        width:100%;
+
+    }
+
+}

@@ -1,0 +1,224 @@
+/* ==========================================
+   WORKER SIDEBAR
+========================================== */
+
+.worker-sidebar{
+
+    width:250px;
+    height:100vh;
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    background:linear-gradient(180deg,#7B5B47,#5C4033);
+
+    padding:25px 18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    box-shadow:4px 0 20px rgba(0,0,0,.08);
+
+    overflow-y:auto;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.worker-sidebar-logo{
+
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.worker-sidebar-logo h2{
+
+    color:#fff;
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:.5px;
+
+}
+
+.worker-sidebar-logo p{
+
+    color:#E8D8CB;
+    font-size:13px;
+    margin-top:6px;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.worker-sidebar nav{
+
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+
+}
+
+.sidebar-link{
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    text-decoration:none;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    color:#FDF7F2;
+
+    font-size:15px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.sidebar-link svg{
+
+    font-size:18px;
+
+}
+
+/* Hover */
+
+.sidebar-link:hover{
+
+    background:#A67C63;
+
+    transform:translateX(4px);
+
+}
+
+/* Active */
+
+.sidebar-link.active{
+
+    background:#F4E8DD;
+
+    color:#5C4033;
+
+    font-weight:600;
+
+}
+
+.sidebar-link.active svg{
+
+    color:#5C4033;
+
+}
+
+/* ==========================================
+   LOGOUT
+========================================== */
+
+.logout-btn{
+
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#C97B63;
+
+    color:#fff;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.logout-btn:hover{
+
+    background:#B4654D;
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+.worker-sidebar::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.worker-sidebar::-webkit-scrollbar-thumb{
+
+    background:#C5A58C;
+
+    border-radius:20px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.worker-sidebar{
+
+    position:relative;
+
+    width:100%;
+    height:auto;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.worker-sidebar{
+
+    padding:20px 15px;
+
+}
+
+.worker-sidebar-logo h2{
+
+    font-size:22px;
+
+}
+
+.sidebar-link{
+
+    font-size:14px;
+
+    padding:12px 14px;
+
+}
+
+.logout-btn{
+
+    font-size:14px;
+
+}
+
+}

@@ -1,0 +1,326 @@
+/* ==========================================
+   WORKER HEADER
+========================================== */
+
+.worker-header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:30px;
+
+    padding:20px 25px;
+
+    background:#FFF9F4;
+
+    border:1px solid #E7D7CA;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+
+}
+
+/* ==========================================
+   LEFT
+========================================== */
+
+.header-left{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.header-left h1{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#5C4033;
+
+    margin-bottom:6px;
+
+}
+
+.header-left p{
+
+    font-size:14px;
+
+    color:#8A7568;
+
+}
+
+/* ==========================================
+   RIGHT
+========================================== */
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.header-search{
+
+    width:280px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#FDF7F2;
+
+    border:1px solid #E6D6C8;
+
+    border-radius:12px;
+
+    padding:0 15px;
+
+}
+
+.header-search svg{
+
+    color:#8B6A54;
+
+    font-size:15px;
+
+}
+
+.header-search input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+    color:#5C4033;
+
+}
+
+.header-search input::placeholder{
+
+    color:#A18C7E;
+
+}
+
+/* ==========================================
+   DATE
+========================================== */
+
+.header-date{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 16px;
+
+    background:#FDF7F2;
+
+    border:1px solid #E6D6C8;
+
+    border-radius:12px;
+
+    color:#6E5648;
+
+    font-size:14px;
+
+}
+
+.header-date svg{
+
+    color:#8B6A54;
+
+}
+
+/* ==========================================
+   NOTIFICATION
+========================================== */
+
+.header-notification{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:12px;
+
+    background:#FDF7F2;
+
+    border:1px solid #E6D6C8;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.header-notification svg{
+
+    color:#8B6A54;
+
+    font-size:18px;
+
+}
+
+.header-notification span{
+
+    position:absolute;
+
+    top:-5px;
+
+    right:-5px;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:#C86B4A;
+
+    color:#fff;
+
+    font-size:11px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.header-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#FDF7F2;
+
+    border:1px solid #E6D6C8;
+
+    border-radius:12px;
+
+    padding:8px 14px;
+
+}
+
+.header-profile svg{
+
+    font-size:38px;
+
+    color:#8B6A54;
+
+}
+
+.header-profile h4{
+
+    font-size:15px;
+
+    color:#5C4033;
+
+    margin-bottom:2px;
+
+}
+
+.header-profile p{
+
+    font-size:12px;
+
+    color:#8A7568;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1200px){
+
+.worker-header{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.header-right{
+
+    width:100%;
+
+    flex-wrap:wrap;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.header-search{
+
+    width:100%;
+
+}
+
+.header-date{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+.header-profile{
+
+    width:100%;
+
+}
+
+.header-right{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+}
+
+}

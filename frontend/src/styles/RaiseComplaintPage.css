@@ -1,0 +1,1200 @@
+/* ===========================================
+   GOOGLE FONT
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F7F4EF;
+}
+
+/* ===========================================
+   PAGE LAYOUT
+=========================================== */
+
+.raise-page{
+    display:flex;
+    width:100%;
+    min-height:100vh;
+    background:#F7F4EF;
+}
+
+.raise-content{
+    flex:1;
+    margin-left:270px;
+    padding:28px;
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.raise-header{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    height:85px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 28px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.menu-btn{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#F3ECE5;
+
+    color:#8B5E3C;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+.header-left h2{
+
+    color:#4B3120;
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.header-left p{
+
+    color:#888;
+
+    font-size:14px;
+
+    margin-top:3px;
+
+}
+
+.header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* ===========================================
+   NOTIFICATION
+=========================================== */
+
+.notification-btn{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:#F5EFE8;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    color:#8B5E3C;
+
+    cursor:pointer;
+
+}
+
+.notification-btn span{
+
+    position:absolute;
+
+    top:-3px;
+
+    right:-2px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#E53935;
+
+    color:white;
+
+    font-size:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ===========================================
+   PROFILE
+=========================================== */
+.profile-box{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:#ffffff;
+
+    padding:10px 16px;
+
+    border-radius:18px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+
+}
+
+.profile-icon{
+
+    font-size:42px;
+
+    color:#8B5E3C;
+
+}
+
+.profile-box h4{
+
+    color:#5C4033;      /* Dark Brown */
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.profile-box p{
+
+    color:#8A7465;      /* Mild Brown */
+
+    font-size:13px;
+
+    font-weight:500;
+
+}
+/* ===========================================
+   FORM CARD
+=========================================== */
+
+.complaint-card{
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.complaint-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:8px;
+
+    background:linear-gradient(
+        90deg,
+        #B67A4A,
+        #D8B892,
+        #8B5E3C
+    );
+
+}
+
+.card-title{
+
+    margin-bottom:35px;
+
+}
+
+.card-title h2{
+
+    font-size:32px;
+
+    color:#4B3120;
+
+    margin-bottom:8px;
+
+}
+
+.card-title p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+.required-note{
+
+    color:#C0392B;
+
+    font-weight:600;
+
+    margin-left:6px;
+
+}
+
+/* ===========================================
+   FORM GRID
+=========================================== */
+
+.form-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:24px;
+
+    margin-bottom:24px;
+
+}
+
+.form-row-three{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr 1fr;
+
+    gap:24px;
+
+    margin-top:20px;
+
+    margin-bottom:24px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ===========================================
+   LABELS
+=========================================== */
+
+.form-group label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#4B3120;
+
+    margin-bottom:10px;
+
+}
+
+.form-group label span{
+
+    color:#E53935;
+
+    margin-left:4px;
+
+}
+
+/* ===========================================
+   INPUTS
+=========================================== */
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    border:2px solid #E9DED2;
+
+    border-radius:18px;
+
+    padding:15px 18px;
+
+    background:#FCFAF8;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    outline:none;
+
+}
+
+.form-group textarea{
+
+    resize:none;
+
+    line-height:1.7;
+
+}
+
+/* ===========================================
+   INPUT BOX
+=========================================== */
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:2px solid #E9DED2;
+
+    border-radius:18px;
+
+    background:#FCFAF8;
+
+    padding:0 15px;
+
+    transition:.3s;
+
+}
+
+.input-box svg{
+
+    color:#8B5E3C;
+
+    margin-right:12px;
+
+    font-size:18px;
+
+}
+
+.input-box input,
+.input-box select{
+
+    border:none;
+
+    background:transparent;
+
+    width:100%;
+
+    padding:15px 0;
+
+    outline:none;
+
+    box-shadow:none;
+
+}
+
+/* ===========================================
+   FOCUS EFFECT
+=========================================== */
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus,
+.input-box:focus-within{
+
+    border-color:#B67A4A;
+
+    box-shadow:0 0 0 4px rgba(182,122,74,.12);
+
+    background:#fff;
+
+}
+
+/* ===========================================
+   CHARACTER COUNT
+=========================================== */
+
+.character-count{
+
+    text-align:right;
+
+    color:#999;
+
+    font-size:13px;
+
+    margin-top:8px;
+
+}
+
+/* ===========================================
+   ERROR MESSAGE
+=========================================== */
+
+.form-group small{
+
+    color:#E53935;
+
+    margin-top:8px;
+
+    font-size:13px;
+
+}
+/* ===========================================
+   UPLOAD AREA
+=========================================== */
+
+.upload-area{
+
+    width:100%;
+
+    min-height:220px;
+
+    margin-top:10px;
+
+    border:2px dashed #C89A6B;
+
+    border-radius:22px;
+
+    background:#FCFAF8;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    padding:35px;
+
+}
+
+.upload-area:hover{
+
+    background:#F6EEE7;
+
+    border-color:#8B5E3C;
+
+    transform:translateY(-3px);
+
+}
+
+.upload-icon{
+
+    font-size:55px;
+
+    color:#8B5E3C;
+
+    margin-bottom:15px;
+
+}
+
+.upload-area h3{
+
+    color:#5C4033;
+
+    font-size:22px;
+
+    margin-bottom:8px;
+
+}
+
+.upload-area p{
+
+    color:#8A7465;
+
+    font-size:14px;
+
+}
+
+/* ===========================================
+   IMAGE PREVIEW
+=========================================== */
+
+.preview-card{
+
+    margin-top:20px;
+
+    padding:18px;
+
+    border-radius:20px;
+
+    background:#F8F5F1;
+
+    text-align:center;
+
+}
+
+.preview-card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    border:4px solid #fff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.preview-card h4{
+
+    margin-top:15px;
+
+    color:#5C4033;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+   GUIDELINES
+=========================================== */
+
+.guidelines-card{
+
+    margin-top:30px;
+
+    background:#F6EFE8;
+
+    border-left:6px solid #B67A4A;
+
+    border-radius:18px;
+
+    padding:22px;
+
+}
+
+.guidelines-card h3{
+
+    color:#5C4033;
+
+    margin-bottom:15px;
+
+}
+
+.guidelines-card ul{
+
+    padding-left:18px;
+
+}
+
+.guidelines-card li{
+
+    color:#6F5A4D;
+
+    margin-bottom:10px;
+
+    line-height:1.6;
+
+}
+
+/* ===========================================
+   SUBMIT BUTTON
+=========================================== */
+
+.submit-btn{
+
+    width:100%;
+
+    margin-top:30px;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        #C89A6B,
+        #8B5E3C
+    );
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(139,94,60,.25);
+
+}
+
+.submit-btn:hover{
+
+    transform:translateY(-4px);
+
+    background:linear-gradient(
+        135deg,
+        #8B5E3C,
+        #6D4C41
+    );
+
+    box-shadow:0 18px 40px rgba(139,94,60,.35);
+
+}
+
+.submit-btn:disabled{
+
+    background:#BDBDBD;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+/* ===========================================
+   PAGE ANIMATION
+=========================================== */
+
+.raise-header,
+.complaint-card{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================
+   INPUT PLACEHOLDER
+=========================================== */
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#A89282;
+
+}
+
+/* ===========================================
+   DROPDOWN
+=========================================== */
+
+select{
+
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+
+    cursor:pointer;
+
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%238B5E3C' viewBox='0 0 16 16'%3E%3Cpath d='M4 6l4 4 4-4' stroke='%238B5E3C' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+
+    background-repeat:no-repeat;
+
+    background-position:right 18px center;
+
+}
+
+/* ===========================================
+   CARD HOVER
+=========================================== */
+
+.complaint-card{
+
+    transition:.35s;
+
+}
+
+.complaint-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/* ===========================================
+   HEADER EFFECT
+=========================================== */
+
+.raise-header:hover{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+}
+
+/* ===========================================
+   BACKGROUND
+=========================================== */
+
+.raise-content{
+
+    background:
+
+    radial-gradient(circle at top right,
+    rgba(214,180,138,.18),
+    transparent 30%),
+
+    radial-gradient(circle at bottom left,
+    rgba(182,122,74,.15),
+    transparent 35%),
+
+    #F8F5F1;
+
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#B67A4A;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F5F5F5;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:1200px){
+
+    .form-row-three{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:992px){
+
+    .raise-content{
+
+        margin-left:240px;
+
+        padding:22px;
+
+    }
+
+    .form-row{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .form-row-three{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .raise-header{
+
+        flex-direction:column;
+
+        height:auto;
+
+        gap:18px;
+
+        padding:20px;
+
+    }
+
+    .header-left,
+    .header-right{
+
+        width:100%;
+
+        justify-content:space-between;
+
+    }
+
+    .complaint-card{
+
+        padding:22px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .raise-content{
+
+        margin-left:0;
+
+        padding:15px;
+
+    }
+
+    .card-title h2{
+
+        font-size:24px;
+
+    }
+
+    .upload-area{
+
+        min-height:180px;
+
+    }
+
+    .preview-card img{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+}
+/* ===========================================
+   PREMIUM ANIMATIONS
+=========================================== */
+
+.raise-header,
+.complaint-card,
+.upload-area,
+.submit-btn{
+
+    animation:fadeInUp .7s ease;
+
+}
+
+@keyframes fadeInUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================================
+   GLASS EFFECT
+=========================================== */
+
+.raise-header{
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.92);
+
+}
+
+.complaint-card{
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.96);
+
+}
+
+/* ===========================================
+   NICE SHADOWS
+=========================================== */
+
+.raise-header{
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.complaint-card{
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.08);
+
+}
+
+/* ===========================================
+   INPUT ANIMATION
+=========================================== */
+
+.form-group input,
+.form-group textarea,
+.form-group select,
+.input-box{
+
+    transition:all .3s ease;
+
+}
+
+.form-group input:hover,
+.form-group textarea:hover,
+.form-group select:hover,
+.input-box:hover{
+
+    border-color:#C89A6B;
+
+}
+
+/* ===========================================
+   BUTTON EFFECT
+=========================================== */
+
+.submit-btn{
+
+    letter-spacing:.4px;
+
+}
+
+.submit-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===========================================
+   UPLOAD EFFECT
+=========================================== */
+
+.upload-area{
+
+    overflow:hidden;
+    position:relative;
+
+}
+
+.upload-area::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:100%;
+
+    left:0;
+    top:0;
+
+    background:rgba(255,255,255,.25);
+
+    transition:.5s;
+
+}
+
+.upload-area:hover::before{
+
+    width:100%;
+
+}
+
+/* ===========================================
+   IMAGE EFFECT
+=========================================== */
+
+.preview-card img{
+
+    transition:.35s;
+
+}
+
+.preview-card img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================================
+   CARD TITLE
+=========================================== */
+
+.card-title h2{
+
+    letter-spacing:.4px;
+
+}
+
+.card-title p{
+
+    line-height:1.7;
+
+}
+
+/* ===========================================
+   FORM GAP
+=========================================== */
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+.form-row{
+
+    margin-bottom:5px;
+
+}
+
+.form-row-three{
+
+    margin-bottom:10px;
+
+}
+
+/* ===========================================
+   PAGE SPACING
+=========================================== */
+
+.raise-content{
+
+    padding-bottom:60px;
+
+}
+
+/* ===========================================
+   SMOOTH SCROLL
+=========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ===========================================
+   REMOVE BLUE TAP
+=========================================== */
+
+button,
+input,
+textarea,
+select{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+/* ===== TEMP FIX ===== */
+
+.complaint-card{
+    display:block !important;
+}
+
+.complaint-card form{
+    display:block !important;
+    width:100% !important;
+}
+
+.form-row,
+.form-row-three{
+    display:grid !important;
+}
+
+.form-group{
+    width:100% !important;
+}
+
+.raise-content{
+    display:block !important;
+}

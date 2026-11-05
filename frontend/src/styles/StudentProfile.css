@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f2ea;
+}
+
+/*==============================
+PROFILE LAYOUT
+===============================*/
+
+.profile-wrapper{
+    display:flex;
+    min-height:100vh;
+    background:#f7f2ea;
+}
+
+.profile-main{
+    flex:1;
+    padding:30px;
+}
+
+.profile-title{
+    margin-bottom:25px;
+}
+
+.profile-title h2{
+    font-size:32px;
+    color:#5a3d2b;
+    font-weight:700;
+}
+
+.profile-title p{
+    color:#8a6d56;
+    margin-top:5px;
+}
+
+/*==============================
+PROFILE CARD
+===============================*/
+
+.profile-card{
+    display:flex;
+    gap:30px;
+    background:#fffdf9;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/*==============================
+LEFT SECTION
+===============================*/
+
+.profile-left{
+    width:300px;
+    text-align:center;
+    border-right:1px solid #ead8c7;
+    padding-right:30px;
+}
+
+.image-box{
+    width:180px;
+    height:180px;
+    margin:auto;
+    position:relative;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #d8b18d;
+}
+
+.default-image{
+    width:100%;
+    height:100%;
+    color:#8b5e3c;
+}
+
+.camera-btn{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    width:45px;
+    height:45px;
+    background:#8b5e3c;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.camera-btn:hover{
+    background:#6f4324;
+}
+
+.profile-left h3{
+    margin-top:20px;
+    color:#5a3d2b;
+}
+
+.profile-left p{
+    color:#888;
+    margin-top:8px;
+}
+
+.student-id{
+    margin-top:20px;
+    background:#f3e5d6;
+    color:#6b472d;
+    padding:12px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+/*==============================
+RIGHT SECTION
+===============================*/
+
+.profile-right{
+    flex:1;
+}
+
+.profile-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.profile-grid label{
+    display:block;
+    margin-bottom:8px;
+    color:#5a3d2b;
+    font-weight:600;
+}
+
+.input-icon{
+    display:flex;
+    align-items:center;
+    background:#fff;
+    border:1px solid #d9c6b4;
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.input-icon svg{
+    margin-left:15px;
+    color:#8b5e3c;
+    font-size:18px;
+}
+
+.input-icon input{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.input-icon:focus-within{
+    border-color:#8b5e3c;
+    box-shadow:0 0 8px rgba(139,94,60,.2);
+}
+
+/*==============================
+BUTTONS
+===============================*/
+
+.button-group{
+    margin-top:35px;
+    display:flex;
+    gap:20px;
+}
+
+.save-btn,
+.password-btn{
+    border:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.save-btn{
+    background:#8b5e3c;
+    color:white;
+}
+
+.save-btn:hover{
+    background:#6f4324;
+    transform:translateY(-2px);
+}
+
+.password-btn{
+    background:#efe2d5;
+    color:#6f4324;
+}
+
+.password-btn:hover{
+    background:#e3cfbc;
+}
+
+/*==============================
+RESPONSIVE
+===============================*/
+
+@media(max-width:992px){
+
+.profile-card{
+    flex-direction:column;
+}
+
+.profile-left{
+    width:100%;
+    border-right:none;
+    border-bottom:1px solid #ead8c7;
+    padding-right:0;
+    padding-bottom:25px;
+}
+
+.profile-grid{
+    grid-template-columns:1fr;
+}
+
+}
+
+@media(max-width:768px){
+
+.profile-main{
+    padding:15px;
+}
+
+.profile-title h2{
+    font-size:26px;
+}
+
+.button-group{
+    flex-direction:column;
+}
+
+.save-btn,
+.password-btn{
+    width:100%;
+    justify-content:center;
+}
+
+.image-box{
+    width:150px;
+    height:150px;
+}
+
+}

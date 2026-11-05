@@ -1,0 +1,753 @@
+/*==================================================
+PENDING COMPLAINTS PAGE
+==================================================*/
+
+.pending-page{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    margin-top:25px;
+
+    border:1px solid #EFE2D5;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    animation:fadeIn .4s ease;
+
+    overflow:hidden;
+
+}
+
+/*==================================================
+HEADER
+==================================================*/
+
+.pending-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:25px;
+
+    margin-bottom:30px;
+
+}
+
+.pending-header h2{
+
+    margin:0;
+
+    color:#5B3213;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+}
+
+.pending-header p{
+
+    margin-top:8px;
+
+    color:#98704D;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    line-height:1.5;
+
+}
+
+/*==================================================
+SEARCH BOX
+==================================================*/
+
+.search-box{
+
+    width:430px;
+
+    height:58px;
+
+    background:#FFF8F2;
+
+    border:1px solid #E9D5C3;
+
+    border-radius:16px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 18px;
+
+    transition:all .3s ease;
+
+}
+
+.search-box:hover{
+
+    border-color:#C88B57;
+
+    background:#FFF9F5;
+
+}
+
+.search-box:focus-within{
+
+    border-color:#A96C39;
+
+    background:#FFFFFF;
+
+    box-shadow:0 0 0 4px rgba(169,108,57,.12);
+
+}
+
+.search-box svg{
+
+    color:#8A582D;
+
+    font-size:18px;
+
+    flex-shrink:0;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#5A3214;
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.search-box input::placeholder{
+
+    color:#B48D67;
+
+}
+
+/*==================================================
+TABLE
+==================================================*/
+
+.pending-table{
+
+    width:100%;
+
+    border-collapse:separate;
+
+    border-spacing:0;
+
+    table-layout:fixed;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    border:1px solid #F0DFCF;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.05);
+
+}
+
+.pending-table thead{
+
+    background:linear-gradient(135deg,#996431,#B17944);
+
+}
+
+.pending-table th{
+
+    padding:18px 14px;
+
+    color:#FFFFFF;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    text-align:center;
+
+    letter-spacing:.3px;
+
+}
+
+.pending-table th:first-child{
+
+    border-top-left-radius:18px;
+
+}
+
+.pending-table th:last-child{
+
+    border-top-right-radius:18px;
+
+}
+
+.pending-table td{
+
+    padding:20px 14px;
+
+    text-align:center;
+
+    vertical-align:middle;
+
+    color:#5A3214;
+
+    font-size:15px;
+
+    border-bottom:1px solid #F2E6DA;
+
+    background:transparent;
+
+}
+
+.pending-table tbody tr{
+
+    transition:all .3s ease;
+
+}
+
+.pending-table tbody tr:nth-child(odd){
+
+    background:#FFFFFF;
+
+}
+
+.pending-table tbody tr:nth-child(even){
+
+    background:#FCF8F4;
+
+}
+
+.pending-table tbody tr:hover{
+
+    background:#FFF2E4;
+
+}
+/*==================================================
+COLUMN WIDTHS
+==================================================*/
+
+.id-col{
+
+    width:10%;
+
+    font-weight:700;
+
+    color:#5A3214;
+
+}
+
+.title-col{
+
+    width:30%;
+
+    text-align:left !important;
+
+    font-weight:600;
+
+    color:#4A2A14;
+
+    line-height:1.5;
+
+    word-break:break-word;
+
+}
+
+.student-col{
+
+    width:15%;
+
+    font-weight:600;
+
+    color:#6A4320;
+
+}
+
+.category-col{
+
+    width:16%;
+
+    font-weight:500;
+
+    color:#6A4320;
+
+}
+
+.priority-col{
+
+    width:12%;
+
+}
+
+.status-col{
+
+    width:12%;
+
+}
+
+.action-col{
+
+    width:130px;
+
+    text-align:center;
+
+}
+
+/*==================================================
+PRIORITY BADGES
+==================================================*/
+
+.priority{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:95px;
+
+    height:40px;
+
+    padding:0 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+    transition:all .25s ease;
+
+}
+
+.priority.high{
+
+    background:#FFE2E2;
+
+    color:#D32F2F;
+
+    border:1px solid #F4B7B7;
+
+}
+
+.priority.medium{
+
+    background:#FFF4D4;
+
+    color:#C57B00;
+
+    border:1px solid #F2D48C;
+
+}
+
+.priority.low{
+
+    background:#DDF8E8;
+
+    color:#1E8E3E;
+
+    border:1px solid #BCEACD;
+
+}
+
+/*==================================================
+STATUS BADGES
+==================================================*/
+
+.status{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-width:115px;
+
+    height:40px;
+
+    padding:0 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+    transition:all .25s ease;
+
+}
+
+.status.pending{
+
+    background:#FFF3CF;
+
+    color:#B7791F;
+
+    border:1px solid #F2D489;
+
+}
+
+/*==================================================
+ACTION BUTTONS
+==================================================*/
+
+.table-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.table-actions button{
+
+    width:44px;
+
+    height:44px;
+
+    border:none;
+
+    border-radius:12px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+    flex-shrink:0;
+
+}
+
+.table-actions button svg{
+
+    font-size:18px;
+
+    color:#FFFFFF;
+
+}
+
+.table-actions button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.18);
+
+}
+
+.view-btn{
+
+    background:#8B5A2B;
+
+}
+
+.view-btn:hover{
+
+    background:#6F431D;
+
+}
+
+.assign-btn{
+
+    background:#C78A42;
+
+}
+
+.assign-btn:hover{
+
+    background:#AE6F2D;
+
+}
+/*==================================================
+LOADING
+==================================================*/
+
+.loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:220px;
+
+    color:#8B5A2B;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    letter-spacing:.3px;
+
+}
+
+/*==================================================
+NO DATA
+==================================================*/
+
+.no-data{
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    color:#9A7A5A;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    line-height:1.7;
+
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .pending-page{
+
+        padding:24px;
+
+    }
+
+    .pending-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:20px;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .pending-table{
+
+        display:block;
+
+        overflow-x:auto;
+
+        white-space:nowrap;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .pending-page{
+
+        padding:20px;
+
+    }
+
+    .pending-header h2{
+
+        font-size:28px;
+
+    }
+
+    .pending-header p{
+
+        font-size:15px;
+
+    }
+
+    .pending-table th{
+
+        padding:14px;
+
+        font-size:14px;
+
+    }
+
+    .pending-table td{
+
+        padding:14px;
+
+        font-size:13px;
+
+    }
+
+    .priority,
+
+    .status{
+
+        min-width:82px;
+
+        height:36px;
+
+        font-size:12px;
+
+        padding:0 12px;
+
+    }
+
+    .table-actions{
+
+        gap:8px;
+
+    }
+
+    .table-actions button{
+
+        width:40px;
+
+        height:40px;
+
+    }
+
+    .table-actions button svg{
+
+        font-size:16px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .pending-page{
+
+        padding:16px;
+
+        border-radius:18px;
+
+    }
+
+    .pending-header{
+
+        gap:15px;
+
+        margin-bottom:22px;
+
+    }
+
+    .pending-header h2{
+
+        font-size:22px;
+
+    }
+
+    .pending-header p{
+
+        font-size:14px;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+        height:46px;
+
+        padding:0 14px;
+
+    }
+
+    .search-box input{
+
+        font-size:14px;
+
+    }
+
+}
+
+/*==================================================
+SCROLLBAR
+==================================================*/
+
+.pending-page::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+.pending-page::-webkit-scrollbar-thumb{
+
+    background:#C48A56;
+
+    border-radius:20px;
+
+}
+
+.pending-page::-webkit-scrollbar-track{
+
+    background:#F7F1EB;
+
+}
+
+/*==================================================
+FADE ANIMATION
+==================================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

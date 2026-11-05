@@ -1,0 +1,627 @@
+/* ==================================================
+   GOOGLE FONT
+================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ==================================================
+   RESET
+================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/* ==================================================
+   PAGE
+================================================== */
+
+.notification-page{
+    width:100%;
+    min-height:100vh;
+    padding:30px;
+    background:#F8F5F1;
+}
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.notification-header{
+    background:#ffffff;
+    border-radius:20px;
+    padding:24px 30px;
+    margin-bottom:30px;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+.notification-header h2{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    color:#5C4033;
+
+    font-size:30px;
+    font-weight:700;
+}
+
+.notification-header h2 svg{
+    color:#9A6B43;
+    font-size:28px;
+}
+
+.notification-header p{
+    margin-top:8px;
+
+    color:#8A7465;
+
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* ==================================================
+   MAIN LAYOUT
+================================================== */
+
+.notification-layout{
+    display:grid;
+    grid-template-columns:280px minmax(0,1fr) 280px;
+    gap:28px;
+    align-items:start;
+}
+
+/* ==================================================
+   COMMON CARD
+================================================== */
+
+.notification-sidebar,
+.notification-content,
+.notification-info{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+}
+/* ==================================================
+   LEFT PANEL
+================================================== */
+
+.notification-sidebar{
+    padding:25px;
+    height:fit-content;
+}
+
+.notification-sidebar h3{
+    font-size:22px;
+    font-weight:700;
+    color:#5C4033;
+    margin-bottom:22px;
+}
+
+/* ==================================================
+   SUMMARY ITEM
+================================================== */
+
+.summary-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 18px;
+    margin-bottom:14px;
+
+    background:#F8F3EC;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+}
+
+.summary-item:hover{
+    background:#EFDCC4;
+    transform:translateY(-2px);
+}
+
+.summary-item.active{
+    background:#9A6B43;
+    color:#ffffff;
+}
+
+.summary-item span{
+    font-size:15px;
+    font-weight:600;
+}
+
+.summary-item span:last-child{
+    width:34px;
+    height:34px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#ffffff;
+    color:#9A6B43;
+
+    font-size:14px;
+    font-weight:700;
+}
+
+.summary-item.active span:last-child{
+    background:rgba(255,255,255,.18);
+    color:#ffffff;
+}
+
+/* ==================================================
+   MARK ALL BUTTON
+================================================== */
+
+.mark-btn{
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+    outline:none;
+
+    border-radius:14px;
+
+    background:#9A6B43;
+    color:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .3s ease;
+}
+
+.mark-btn:hover{
+    background:#7A5234;
+    transform:translateY(-2px);
+}
+
+.mark-btn svg{
+    font-size:18px;
+}
+/* ==================================================
+   CENTER PANEL
+================================================== */
+
+.notification-content{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    min-width:0;
+}
+
+/* ==================================================
+   CONTENT HEADER
+================================================== */
+
+.content-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-bottom:18px;
+    border-bottom:1px solid #EFE6DA;
+}
+
+.content-header h3{
+    color:#5C4033;
+    font-size:24px;
+    font-weight:700;
+}
+
+.content-header span{
+    background:#F8F3EC;
+    color:#7A5234;
+    padding:8px 14px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* ==================================================
+   NOTIFICATION LIST
+================================================== */
+
+.notification-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+/* ==================================================
+   EMPTY STATE
+================================================== */
+
+.empty-notification{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:70px 20px;
+}
+
+.empty-notification svg{
+    color:#9A6B43;
+    margin-bottom:18px;
+}
+
+.empty-notification h3{
+    font-size:24px;
+    color:#5C4033;
+    margin-bottom:10px;
+}
+
+.empty-notification p{
+    color:#8A7465;
+    font-size:15px;
+    line-height:1.6;
+}
+/* ==================================================
+   NOTIFICATION CARD
+================================================== */
+
+.notification-card{
+    display:grid;
+    grid-template-columns:70px 1fr auto;
+    gap:18px;
+    align-items:center;
+
+    padding:20px;
+
+    border:1px solid #EFE6DA;
+    border-radius:18px;
+
+    background:#ffffff;
+
+    transition:all .3s ease;
+}
+
+.notification-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
+}
+
+.notification-card.unread{
+    background:#FFF8EF;
+    border-left:6px solid #9A6B43;
+}
+
+.notification-card.read{
+    opacity:.95;
+}
+
+/* ==================================================
+   ICON
+================================================== */
+
+.notification-icon{
+
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#F7EAD7;
+
+    font-size:24px;
+
+    flex-shrink:0;
+}
+
+.blue{
+    color:#1E88E5;
+}
+
+.green{
+    color:#43A047;
+}
+
+.orange{
+    color:#FB8C00;
+}
+
+.purple{
+    color:#8E24AA;
+}
+
+/* ==================================================
+   BODY
+================================================== */
+
+.notification-body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.notification-body h4{
+    color:#4E342E;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.notification-body p{
+    color:#6D4C41;
+    font-size:15px;
+    line-height:1.7;
+}
+
+/* ==================================================
+   RIGHT SIDE
+================================================== */
+
+.notification-right{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-end;
+
+    gap:10px;
+
+    text-align:right;
+}
+
+.notification-right span{
+    color:#8A7465;
+    font-size:13px;
+    font-weight:500;
+}
+
+.dot{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#2196F3;
+}
+
+/* ==================================================
+   DELETE BUTTON
+================================================== */
+
+.delete-btn{
+
+    border:none;
+
+    background:#E53935;
+    color:#ffffff;
+
+    padding:8px 16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:all .3s ease;
+}
+
+.delete-btn:hover{
+
+    background:#C62828;
+
+    transform:translateY(-2px);
+}
+/* ==================================================
+   RIGHT INFO PANEL
+================================================== */
+
+.notification-info{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    height:fit-content;
+}
+
+.notification-info h3{
+    color:#5C4033;
+    font-size:22px;
+    font-weight:700;
+}
+
+.info-card{
+    background:#F8F3EC;
+    border-radius:16px;
+    padding:20px;
+    transition:all .3s ease;
+}
+
+.info-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+}
+
+.info-icon{
+    font-size:30px;
+    color:#9A6B43;
+    margin-bottom:12px;
+}
+
+.info-card h4{
+    color:#5C4033;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:#6D4C41;
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.notification-footer{
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+
+    padding:18px;
+
+    background:#F5EFE7;
+
+    border-radius:16px;
+
+    color:#6D4C41;
+    font-size:15px;
+    font-weight:500;
+}
+
+.notification-footer svg{
+    color:#9A6B43;
+    font-size:18px;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width:1200px){
+
+    .notification-layout{
+        grid-template-columns:260px 1fr;
+    }
+
+    .notification-info{
+        grid-column:1 / -1;
+    }
+
+}
+
+@media (max-width:992px){
+
+    .notification-layout{
+        grid-template-columns:1fr;
+    }
+
+    .notification-sidebar,
+    .notification-content,
+    .notification-info{
+        width:100%;
+    }
+
+    .notification-card{
+        grid-template-columns:60px 1fr;
+    }
+
+    .notification-right{
+        grid-column:2;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        width:100%;
+        margin-top:10px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .notification-page{
+        padding:20px;
+    }
+
+    .notification-header{
+        padding:20px;
+    }
+
+    .notification-header h2{
+        font-size:26px;
+    }
+
+    .content-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+    .notification-card{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .notification-icon{
+        margin:auto;
+    }
+
+    .notification-body{
+        align-items:center;
+    }
+
+    .notification-right{
+        width:100%;
+        justify-content:center;
+        flex-direction:row;
+        gap:15px;
+        margin-top:15px;
+    }
+
+    .notification-footer{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .notification-page{
+        padding:15px;
+    }
+
+    .notification-header h2{
+        font-size:22px;
+    }
+
+    .notification-sidebar,
+    .notification-content,
+    .notification-info{
+        padding:18px;
+    }
+
+}

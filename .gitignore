@@ -1,0 +1,5 @@
+backend/src/main/resources/application.properties
+backend/target/
+backend/uploads/
+frontend/node_modules/
+frontend/build/

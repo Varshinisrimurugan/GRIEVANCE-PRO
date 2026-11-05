@@ -1,0 +1,273 @@
+/*====================================
+ASSIGN WORKER PAGE
+====================================*/
+
+.assign-worker-page{
+
+    min-height:100vh;
+
+    background:#F8F3ED;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+/*====================================
+CARD
+====================================*/
+
+.assign-card{
+
+    width:100%;
+
+    max-width:850px;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.assign-card h2{
+
+    color:#5A3214;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+}
+
+.assign-card p{
+
+    color:#8A6A4C;
+
+    margin-bottom:30px;
+
+}
+
+
+/*====================================
+COMPLAINT DETAILS
+====================================*/
+
+.complaint-details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-bottom:30px;
+
+}
+
+.detail-box{
+
+    background:#FFF8F1;
+
+    border:1px solid #E8D9CA;
+
+    border-radius:15px;
+
+    padding:18px;
+
+}
+
+.detail-box label{
+
+    display:block;
+
+    color:#8B6A4B;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+.detail-box span{
+
+    color:#3B2414;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+
+/*====================================
+FORM
+====================================*/
+
+.form-group{
+
+    margin-bottom:30px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#5A3214;
+
+    font-weight:600;
+
+}
+
+.form-group select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:2px solid #DCC8B6;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    outline:none;
+
+    background:#FFFDFB;
+
+    transition:.3s;
+
+}
+
+.form-group select:focus{
+
+    border-color:#8B5A2B;
+
+}
+
+
+/*====================================
+BUTTONS
+====================================*/
+
+.button-group{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:15px;
+
+}
+
+.cancel-btn{
+
+    background:#E5E7EB;
+
+    color:#374151;
+
+    border:none;
+
+    padding:12px 28px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:#D1D5DB;
+
+}
+
+.assign-btn{
+
+    background:linear-gradient(135deg,#8B5A2B,#A66E3F);
+
+    color:#ffffff;
+
+    border:none;
+
+    padding:12px 30px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.assign-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(139,90,43,.35);
+
+}
+
+
+/*====================================
+RESPONSIVE
+====================================*/
+
+@media(max-width:768px){
+
+.assign-card{
+
+    padding:25px;
+
+}
+
+.complaint-details{
+
+    grid-template-columns:1fr;
+
+}
+
+.button-group{
+
+    flex-direction:column;
+
+}
+
+.cancel-btn,
+.assign-btn{
+
+    width:100%;
+
+}
+
+}

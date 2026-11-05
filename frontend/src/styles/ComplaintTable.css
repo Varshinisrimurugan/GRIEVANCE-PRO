@@ -1,0 +1,374 @@
+/*====================================
+COMPLAINT PRIORITY CONTAINER
+====================================*/
+
+.complaint-table-container{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:25px;
+
+    margin-top:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+/*====================================
+HEADER
+====================================*/
+
+.priority-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.priority-header h2{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#5A3214;
+
+}
+
+.view-all-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    background:none;
+
+    border:none;
+
+    color:#7B4B25;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.view-all-btn:hover{
+
+    color:#A66E3F;
+
+    transform:translateX(3px);
+
+}
+
+/*====================================
+GRID
+====================================*/
+
+.priority-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+/*====================================
+CARD
+====================================*/
+
+.priority-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.priority-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.priority-card h4{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    color:#4B2F19;
+
+    font-weight:600;
+
+}
+
+.priority-card h1{
+
+    margin:15px 0 6px;
+
+    font-size:48px;
+
+    color:#2F1D12;
+
+    font-weight:700;
+
+}
+
+.priority-card span{
+
+    color:#777;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+/*====================================
+ICONS
+====================================*/
+
+.priority-icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto;
+
+    font-size:24px;
+
+    color:#fff;
+
+}
+
+.high-icon{
+
+    background:#EF4444;
+
+}
+
+.medium-icon{
+
+    background:#F59E0B;
+
+}
+
+.low-icon{
+
+    background:#22C55E;
+
+}
+
+/*====================================
+PROGRESS BAR
+====================================*/
+
+.progress-bar{
+
+    width:100%;
+
+    height:6px;
+
+    background:#EFEFEF;
+
+    border-radius:30px;
+
+    margin-top:22px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:30px;
+
+}
+
+.high-fill{
+
+    background:#EF4444;
+
+}
+
+.medium-fill{
+
+    background:#F59E0B;
+
+}
+
+.low-fill{
+
+    background:#22C55E;
+
+}
+
+/*====================================
+CARD BACKGROUND
+====================================*/
+
+.high-card{
+
+    background:linear-gradient(
+        180deg,
+        #FFF6F6,
+        #FFFFFF
+    );
+
+}
+
+.medium-card{
+
+    background:linear-gradient(
+        180deg,
+        #FFFBF2,
+        #FFFFFF
+    );
+
+}
+
+.low-card{
+
+    background:linear-gradient(
+        180deg,
+        #F5FFF7,
+        #FFFFFF
+    );
+
+}
+
+/*====================================
+RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+    .priority-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .complaint-table-container{
+
+        padding:20px;
+
+    }
+
+    .priority-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .priority-header h2{
+
+        font-size:24px;
+
+    }
+
+    .priority-card{
+
+        padding:22px 18px;
+
+    }
+
+    .priority-card h1{
+
+        font-size:40px;
+
+    }
+
+    .priority-card h4{
+
+        font-size:17px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .complaint-table-container{
+
+        padding:16px;
+
+    }
+
+    .priority-header h2{
+
+        font-size:22px;
+
+    }
+
+    .priority-card{
+
+        padding:20px 15px;
+
+    }
+
+    .priority-card h1{
+
+        font-size:34px;
+
+    }
+
+    .priority-icon{
+
+        width:50px;
+
+        height:50px;
+
+        font-size:20px;
+
+    }
+
+}
